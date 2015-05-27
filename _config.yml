@@ -1,14 +1,13 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
+title: Mike Whitby
+email: m.whitby@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  I'm a PHP developer who specialises in Magento, I live in Nottingham but
+  work as a contractor in London.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "http://mikewhitby.co.uk" # the base hostname & protocol for your site
+twitter_username: mikewhitby
+github_username:  mikewhitby
 
 # Build settings
 markdown: kramdown
