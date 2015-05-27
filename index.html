@@ -1,71 +1,23 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>mikewhitby.co.uk</title>
-    <style>
-        @import url(http://fonts.googleapis.com/css?family=Patua+One);
-        /* General elements */
-        html, body {
-            height: 100%;
-        }
-        body {
-            background-color: #272727;
-            box-shadow: inset 0 0 100px rgba(255, 255, 255, 0.24);
-            margin: 0;
-            font: 22px 'Patua One', cursive;
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-align-items: center;
-                -ms-flex-align: center;
-                    align-items: center;
-            -webkit-justify-content: center;
-                -ms-flex-pack: center;
-                    justify-content: center;
-        }
-        /* Specific elements */
-        .container {
-            width: 90%;
-            color: #C7C7C7;
-            text-align: center;
-            padding: 20px;
-        }
-        /* Large screen fixes */
-        @media all and (min-width: 400px) {
-            .container {
-                width: 45%;
-                min-width: 400px;
-                max-width: 600px;
-                padding: 0;
-                font-size: 1.22em;
-            }
-        }
-    </style>
-    <!--[if lt IE 10]>
-    <style>
-        .container {
-            margin: 1.5em auto 0 auto;
-        }
-    </style>
-    <![endif]-->
-</head>
-<body>
-    <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+---
+layout: default
+---
 
-        ga('create', 'UA-58074951-1', 'auto');
-        ga('send', 'pageview');
-    </script>
-    <div class="container">
-        <p class="about-tuvio">
-            Coming soon
-        </p>
-    </div>
-</body>
-</html>
+<div class="home">
+
+  <h1 class="page-heading">Posts</h1>
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>
+
+  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+
+</div>
