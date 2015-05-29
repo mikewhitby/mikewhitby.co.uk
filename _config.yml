@@ -2,8 +2,8 @@
 title: Mike Whitby
 email: m.whitby@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  I'm a PHP developer who specialises in Magento, I live in Nottingham but
-  work as a contractor in London.
+  Mike Whitby is a PHP developer specialising in Magento. He is a contractor
+  who works in London and throughout the UK. This is his personal blog
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://mikewhitby.co.uk" # the base hostname & protocol for your site
 twitter_username: mikewhitby
