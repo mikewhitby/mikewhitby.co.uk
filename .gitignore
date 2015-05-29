@@ -1,3 +1,4 @@
-_site
-.sass-cache
-_glynn.yml
+/_site
+/.sass-cache
+/_glynn.yml
+/_vendor
